@@ -52,22 +52,27 @@ const hacerAlgo=(c,d)=>{
 
 //Argumentos para as funciones:
                function saludar(saludo){
-                   if(!saludo)console.log('nohaysaludo');
-                    elseconsole.log(saludo);
+                   if(!saludo)console.log('no hay saludo');
+                    else console.log(saludo);
                 }
                 //no hay saludo saludar();
                 //hola saludar ('hola');
                 //hola saludar ('hola','Alejandro');
 
 //Objetos "Arguments":
-unction saludar(){
-    const saludo = arguments[0]; 
+function saludar() {
+    const saludo = arguments[0];
     const nombre = arguments[1];
-    
-    // undefined 
+    const apellido = arguments[2];
+    // Fernández
     console.log(arguments[2]);
+    // Undefined
+    console.log(arguments[3]);
+    // Adiós, Carlos!
+    console.log(saludo + ', ' + nombre + ' ' + apellido + '!');
+}
+saludar('Adiós', 'Carlos', 'Fernández');
 
-    //Adiós,Carlos!
-    console.log(saludo+', '+ nombre +'!');
+//Declaración global window.hola(),this.hola() y hola()
 
-}saludar('Adiós','Carlos');
+
